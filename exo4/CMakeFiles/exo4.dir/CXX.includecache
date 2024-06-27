@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo4/analyseur/LexicalAnalyzer.h
+iostream
+-
+fstream
+-
+string
+-
+
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo4/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+analyseur/LexicalAnalyzer.h
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo4/analyseur/LexicalAnalyzer.h
+
