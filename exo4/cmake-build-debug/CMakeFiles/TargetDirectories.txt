@@ -1,3 +1,0 @@
-/home/noutcheu/CLionProjects/Compilation_TP_1-5/cmake-build-debug/CMakeFiles/Compilation_TP_1_5.dir
-/home/noutcheu/CLionProjects/Compilation_TP_1-5/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/noutcheu/CLionProjects/Compilation_TP_1-5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

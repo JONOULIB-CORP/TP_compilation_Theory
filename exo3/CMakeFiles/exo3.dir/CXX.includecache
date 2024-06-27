@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/header/DFA.h
+iostream
+-
+fstream
+-
+string
+-
+
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/header/DFA_Generalisation.h
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/header/exo3-1.h
+iostream
+-
+fstream
+-
+string
+-
+DFA.h
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/header/DFA.h
+
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/header/exo3-2.h
+iostream
+-
+fstream
+-
+string
+-
+DFA_Generalisation.h
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/header/DFA_Generalisation.h
+
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+header/exo3-1.h
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/header/exo3-1.h
+header/exo3-2.h
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/header/exo3-2.h
+
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA_Generalisation.cpp
+../header/DFA_Generalisation.h
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/header/DFA_Generalisation.h
+
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3-2.cpp
+../header/exo3-2.h
+/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/header/exo3-2.h
+
