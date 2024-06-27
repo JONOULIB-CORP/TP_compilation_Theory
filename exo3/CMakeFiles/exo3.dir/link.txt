@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/exo3.dir/main.cpp.o CMakeFiles/exo3.dir/source/DFA.cpp.o CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.o CMakeFiles/exo3.dir/source/exo3-1.cpp.o CMakeFiles/exo3.dir/source/exo3-2.cpp.o  -o exo3 
+/usr/bin/cc    CMakeFiles/exo3.dir/main.c.o CMakeFiles/exo3.dir/source/DFA.c.o CMakeFiles/exo3.dir/source/DFA_Generalisation.c.o CMakeFiles/exo3.dir/source/exo3_1.c.o CMakeFiles/exo3.dir/source/exo3_2.c.o  -o exo3 

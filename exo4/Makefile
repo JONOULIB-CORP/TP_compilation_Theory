@@ -123,59 +123,59 @@ exo4/fast:
 	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/build
 .PHONY : exo4/fast
 
-analyseur/LexicalAnalyzer.o: analyseur/LexicalAnalyzer.cpp.o
+analyseur/LexicalAnalyzer.o: analyseur/LexicalAnalyzer.c.o
 
 .PHONY : analyseur/LexicalAnalyzer.o
 
 # target to build an object file
-analyseur/LexicalAnalyzer.cpp.o:
-	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/analyseur/LexicalAnalyzer.cpp.o
-.PHONY : analyseur/LexicalAnalyzer.cpp.o
+analyseur/LexicalAnalyzer.c.o:
+	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/analyseur/LexicalAnalyzer.c.o
+.PHONY : analyseur/LexicalAnalyzer.c.o
 
-analyseur/LexicalAnalyzer.i: analyseur/LexicalAnalyzer.cpp.i
+analyseur/LexicalAnalyzer.i: analyseur/LexicalAnalyzer.c.i
 
 .PHONY : analyseur/LexicalAnalyzer.i
 
 # target to preprocess a source file
-analyseur/LexicalAnalyzer.cpp.i:
-	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/analyseur/LexicalAnalyzer.cpp.i
-.PHONY : analyseur/LexicalAnalyzer.cpp.i
+analyseur/LexicalAnalyzer.c.i:
+	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/analyseur/LexicalAnalyzer.c.i
+.PHONY : analyseur/LexicalAnalyzer.c.i
 
-analyseur/LexicalAnalyzer.s: analyseur/LexicalAnalyzer.cpp.s
+analyseur/LexicalAnalyzer.s: analyseur/LexicalAnalyzer.c.s
 
 .PHONY : analyseur/LexicalAnalyzer.s
 
 # target to generate assembly for a file
-analyseur/LexicalAnalyzer.cpp.s:
-	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/analyseur/LexicalAnalyzer.cpp.s
-.PHONY : analyseur/LexicalAnalyzer.cpp.s
+analyseur/LexicalAnalyzer.c.s:
+	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/analyseur/LexicalAnalyzer.c.s
+.PHONY : analyseur/LexicalAnalyzer.c.s
 
-main.o: main.cpp.o
+main.o: main.c.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/main.cpp.o
-.PHONY : main.cpp.o
+main.c.o:
+	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/main.c.o
+.PHONY : main.c.o
 
-main.i: main.cpp.i
+main.i: main.c.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.c.i:
+	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/main.c.i
+.PHONY : main.c.i
 
-main.s: main.cpp.s
+main.s: main.c.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.c.s:
+	$(MAKE) -f CMakeFiles/exo4.dir/build.make CMakeFiles/exo4.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:

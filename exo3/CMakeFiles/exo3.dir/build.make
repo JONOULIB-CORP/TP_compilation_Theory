@@ -57,90 +57,90 @@ include CMakeFiles/exo3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/exo3.dir/flags.make
 
-CMakeFiles/exo3.dir/main.cpp.o: CMakeFiles/exo3.dir/flags.make
-CMakeFiles/exo3.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exo3.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exo3.dir/main.cpp.o -c "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/main.cpp"
+CMakeFiles/exo3.dir/main.c.o: CMakeFiles/exo3.dir/flags.make
+CMakeFiles/exo3.dir/main.c.o: main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/exo3.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/exo3.dir/main.c.o   -c "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/main.c"
 
-CMakeFiles/exo3.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exo3.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/main.cpp" > CMakeFiles/exo3.dir/main.cpp.i
+CMakeFiles/exo3.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/exo3.dir/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/main.c" > CMakeFiles/exo3.dir/main.c.i
 
-CMakeFiles/exo3.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exo3.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/main.cpp" -o CMakeFiles/exo3.dir/main.cpp.s
+CMakeFiles/exo3.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/exo3.dir/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/main.c" -o CMakeFiles/exo3.dir/main.c.s
 
-CMakeFiles/exo3.dir/source/DFA.cpp.o: CMakeFiles/exo3.dir/flags.make
-CMakeFiles/exo3.dir/source/DFA.cpp.o: source/DFA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exo3.dir/source/DFA.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exo3.dir/source/DFA.cpp.o -c "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA.cpp"
+CMakeFiles/exo3.dir/source/DFA.c.o: CMakeFiles/exo3.dir/flags.make
+CMakeFiles/exo3.dir/source/DFA.c.o: source/DFA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/exo3.dir/source/DFA.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/exo3.dir/source/DFA.c.o   -c "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA.c"
 
-CMakeFiles/exo3.dir/source/DFA.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exo3.dir/source/DFA.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA.cpp" > CMakeFiles/exo3.dir/source/DFA.cpp.i
+CMakeFiles/exo3.dir/source/DFA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/exo3.dir/source/DFA.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA.c" > CMakeFiles/exo3.dir/source/DFA.c.i
 
-CMakeFiles/exo3.dir/source/DFA.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exo3.dir/source/DFA.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA.cpp" -o CMakeFiles/exo3.dir/source/DFA.cpp.s
+CMakeFiles/exo3.dir/source/DFA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/exo3.dir/source/DFA.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA.c" -o CMakeFiles/exo3.dir/source/DFA.c.s
 
-CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.o: CMakeFiles/exo3.dir/flags.make
-CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.o: source/DFA_Generalisation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.o -c "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA_Generalisation.cpp"
+CMakeFiles/exo3.dir/source/DFA_Generalisation.c.o: CMakeFiles/exo3.dir/flags.make
+CMakeFiles/exo3.dir/source/DFA_Generalisation.c.o: source/DFA_Generalisation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/exo3.dir/source/DFA_Generalisation.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/exo3.dir/source/DFA_Generalisation.c.o   -c "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA_Generalisation.c"
 
-CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA_Generalisation.cpp" > CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.i
+CMakeFiles/exo3.dir/source/DFA_Generalisation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/exo3.dir/source/DFA_Generalisation.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA_Generalisation.c" > CMakeFiles/exo3.dir/source/DFA_Generalisation.c.i
 
-CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA_Generalisation.cpp" -o CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.s
+CMakeFiles/exo3.dir/source/DFA_Generalisation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/exo3.dir/source/DFA_Generalisation.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/DFA_Generalisation.c" -o CMakeFiles/exo3.dir/source/DFA_Generalisation.c.s
 
-CMakeFiles/exo3.dir/source/exo3-1.cpp.o: CMakeFiles/exo3.dir/flags.make
-CMakeFiles/exo3.dir/source/exo3-1.cpp.o: source/exo3-1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exo3.dir/source/exo3-1.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exo3.dir/source/exo3-1.cpp.o -c "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3-1.cpp"
+CMakeFiles/exo3.dir/source/exo3_1.c.o: CMakeFiles/exo3.dir/flags.make
+CMakeFiles/exo3.dir/source/exo3_1.c.o: source/exo3_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/exo3.dir/source/exo3_1.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/exo3.dir/source/exo3_1.c.o   -c "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3_1.c"
 
-CMakeFiles/exo3.dir/source/exo3-1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exo3.dir/source/exo3-1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3-1.cpp" > CMakeFiles/exo3.dir/source/exo3-1.cpp.i
+CMakeFiles/exo3.dir/source/exo3_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/exo3.dir/source/exo3_1.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3_1.c" > CMakeFiles/exo3.dir/source/exo3_1.c.i
 
-CMakeFiles/exo3.dir/source/exo3-1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exo3.dir/source/exo3-1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3-1.cpp" -o CMakeFiles/exo3.dir/source/exo3-1.cpp.s
+CMakeFiles/exo3.dir/source/exo3_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/exo3.dir/source/exo3_1.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3_1.c" -o CMakeFiles/exo3.dir/source/exo3_1.c.s
 
-CMakeFiles/exo3.dir/source/exo3-2.cpp.o: CMakeFiles/exo3.dir/flags.make
-CMakeFiles/exo3.dir/source/exo3-2.cpp.o: source/exo3-2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exo3.dir/source/exo3-2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exo3.dir/source/exo3-2.cpp.o -c "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3-2.cpp"
+CMakeFiles/exo3.dir/source/exo3_2.c.o: CMakeFiles/exo3.dir/flags.make
+CMakeFiles/exo3.dir/source/exo3_2.c.o: source/exo3_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/exo3.dir/source/exo3_2.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/exo3.dir/source/exo3_2.c.o   -c "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3_2.c"
 
-CMakeFiles/exo3.dir/source/exo3-2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exo3.dir/source/exo3-2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3-2.cpp" > CMakeFiles/exo3.dir/source/exo3-2.cpp.i
+CMakeFiles/exo3.dir/source/exo3_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/exo3.dir/source/exo3_2.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3_2.c" > CMakeFiles/exo3.dir/source/exo3_2.c.i
 
-CMakeFiles/exo3.dir/source/exo3-2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exo3.dir/source/exo3-2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3-2.cpp" -o CMakeFiles/exo3.dir/source/exo3-2.cpp.s
+CMakeFiles/exo3.dir/source/exo3_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/exo3.dir/source/exo3_2.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/source/exo3_2.c" -o CMakeFiles/exo3.dir/source/exo3_2.c.s
 
 # Object files for target exo3
 exo3_OBJECTS = \
-"CMakeFiles/exo3.dir/main.cpp.o" \
-"CMakeFiles/exo3.dir/source/DFA.cpp.o" \
-"CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.o" \
-"CMakeFiles/exo3.dir/source/exo3-1.cpp.o" \
-"CMakeFiles/exo3.dir/source/exo3-2.cpp.o"
+"CMakeFiles/exo3.dir/main.c.o" \
+"CMakeFiles/exo3.dir/source/DFA.c.o" \
+"CMakeFiles/exo3.dir/source/DFA_Generalisation.c.o" \
+"CMakeFiles/exo3.dir/source/exo3_1.c.o" \
+"CMakeFiles/exo3.dir/source/exo3_2.c.o"
 
 # External object files for target exo3
 exo3_EXTERNAL_OBJECTS =
 
-exo3: CMakeFiles/exo3.dir/main.cpp.o
-exo3: CMakeFiles/exo3.dir/source/DFA.cpp.o
-exo3: CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.o
-exo3: CMakeFiles/exo3.dir/source/exo3-1.cpp.o
-exo3: CMakeFiles/exo3.dir/source/exo3-2.cpp.o
+exo3: CMakeFiles/exo3.dir/main.c.o
+exo3: CMakeFiles/exo3.dir/source/DFA.c.o
+exo3: CMakeFiles/exo3.dir/source/DFA_Generalisation.c.o
+exo3: CMakeFiles/exo3.dir/source/exo3_1.c.o
+exo3: CMakeFiles/exo3.dir/source/exo3_2.c.o
 exo3: CMakeFiles/exo3.dir/build.make
 exo3: CMakeFiles/exo3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable exo3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/noutcheu/Documents/Info Master 1/Compilation/TP/exo3/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable exo3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exo3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
