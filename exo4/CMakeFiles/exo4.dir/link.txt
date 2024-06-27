@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/exo4.dir/main.c.o CMakeFiles/exo4.dir/analyseur/LexicalAnalyzer.c.o  -o exo4 
