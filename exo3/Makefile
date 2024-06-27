@@ -123,140 +123,140 @@ exo3/fast:
 	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/build
 .PHONY : exo3/fast
 
-main.o: main.cpp.o
+main.o: main.c.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/main.cpp.o
-.PHONY : main.cpp.o
+main.c.o:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/main.c.o
+.PHONY : main.c.o
 
-main.i: main.cpp.i
+main.i: main.c.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.c.i:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/main.c.i
+.PHONY : main.c.i
 
-main.s: main.cpp.s
+main.s: main.c.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.c.s:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/main.c.s
+.PHONY : main.c.s
 
-source/DFA.o: source/DFA.cpp.o
+source/DFA.o: source/DFA.c.o
 
 .PHONY : source/DFA.o
 
 # target to build an object file
-source/DFA.cpp.o:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA.cpp.o
-.PHONY : source/DFA.cpp.o
+source/DFA.c.o:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA.c.o
+.PHONY : source/DFA.c.o
 
-source/DFA.i: source/DFA.cpp.i
+source/DFA.i: source/DFA.c.i
 
 .PHONY : source/DFA.i
 
 # target to preprocess a source file
-source/DFA.cpp.i:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA.cpp.i
-.PHONY : source/DFA.cpp.i
+source/DFA.c.i:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA.c.i
+.PHONY : source/DFA.c.i
 
-source/DFA.s: source/DFA.cpp.s
+source/DFA.s: source/DFA.c.s
 
 .PHONY : source/DFA.s
 
 # target to generate assembly for a file
-source/DFA.cpp.s:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA.cpp.s
-.PHONY : source/DFA.cpp.s
+source/DFA.c.s:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA.c.s
+.PHONY : source/DFA.c.s
 
-source/DFA_Generalisation.o: source/DFA_Generalisation.cpp.o
+source/DFA_Generalisation.o: source/DFA_Generalisation.c.o
 
 .PHONY : source/DFA_Generalisation.o
 
 # target to build an object file
-source/DFA_Generalisation.cpp.o:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.o
-.PHONY : source/DFA_Generalisation.cpp.o
+source/DFA_Generalisation.c.o:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA_Generalisation.c.o
+.PHONY : source/DFA_Generalisation.c.o
 
-source/DFA_Generalisation.i: source/DFA_Generalisation.cpp.i
+source/DFA_Generalisation.i: source/DFA_Generalisation.c.i
 
 .PHONY : source/DFA_Generalisation.i
 
 # target to preprocess a source file
-source/DFA_Generalisation.cpp.i:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.i
-.PHONY : source/DFA_Generalisation.cpp.i
+source/DFA_Generalisation.c.i:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA_Generalisation.c.i
+.PHONY : source/DFA_Generalisation.c.i
 
-source/DFA_Generalisation.s: source/DFA_Generalisation.cpp.s
+source/DFA_Generalisation.s: source/DFA_Generalisation.c.s
 
 .PHONY : source/DFA_Generalisation.s
 
 # target to generate assembly for a file
-source/DFA_Generalisation.cpp.s:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA_Generalisation.cpp.s
-.PHONY : source/DFA_Generalisation.cpp.s
+source/DFA_Generalisation.c.s:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/DFA_Generalisation.c.s
+.PHONY : source/DFA_Generalisation.c.s
 
-source/exo3-1.o: source/exo3-1.cpp.o
+source/exo3_1.o: source/exo3_1.c.o
 
-.PHONY : source/exo3-1.o
-
-# target to build an object file
-source/exo3-1.cpp.o:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3-1.cpp.o
-.PHONY : source/exo3-1.cpp.o
-
-source/exo3-1.i: source/exo3-1.cpp.i
-
-.PHONY : source/exo3-1.i
-
-# target to preprocess a source file
-source/exo3-1.cpp.i:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3-1.cpp.i
-.PHONY : source/exo3-1.cpp.i
-
-source/exo3-1.s: source/exo3-1.cpp.s
-
-.PHONY : source/exo3-1.s
-
-# target to generate assembly for a file
-source/exo3-1.cpp.s:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3-1.cpp.s
-.PHONY : source/exo3-1.cpp.s
-
-source/exo3-2.o: source/exo3-2.cpp.o
-
-.PHONY : source/exo3-2.o
+.PHONY : source/exo3_1.o
 
 # target to build an object file
-source/exo3-2.cpp.o:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3-2.cpp.o
-.PHONY : source/exo3-2.cpp.o
+source/exo3_1.c.o:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3_1.c.o
+.PHONY : source/exo3_1.c.o
 
-source/exo3-2.i: source/exo3-2.cpp.i
+source/exo3_1.i: source/exo3_1.c.i
 
-.PHONY : source/exo3-2.i
+.PHONY : source/exo3_1.i
 
 # target to preprocess a source file
-source/exo3-2.cpp.i:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3-2.cpp.i
-.PHONY : source/exo3-2.cpp.i
+source/exo3_1.c.i:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3_1.c.i
+.PHONY : source/exo3_1.c.i
 
-source/exo3-2.s: source/exo3-2.cpp.s
+source/exo3_1.s: source/exo3_1.c.s
 
-.PHONY : source/exo3-2.s
+.PHONY : source/exo3_1.s
 
 # target to generate assembly for a file
-source/exo3-2.cpp.s:
-	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3-2.cpp.s
-.PHONY : source/exo3-2.cpp.s
+source/exo3_1.c.s:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3_1.c.s
+.PHONY : source/exo3_1.c.s
+
+source/exo3_2.o: source/exo3_2.c.o
+
+.PHONY : source/exo3_2.o
+
+# target to build an object file
+source/exo3_2.c.o:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3_2.c.o
+.PHONY : source/exo3_2.c.o
+
+source/exo3_2.i: source/exo3_2.c.i
+
+.PHONY : source/exo3_2.i
+
+# target to preprocess a source file
+source/exo3_2.c.i:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3_2.c.i
+.PHONY : source/exo3_2.c.i
+
+source/exo3_2.s: source/exo3_2.c.s
+
+.PHONY : source/exo3_2.s
+
+# target to generate assembly for a file
+source/exo3_2.c.s:
+	$(MAKE) -f CMakeFiles/exo3.dir/build.make CMakeFiles/exo3.dir/source/exo3_2.c.s
+.PHONY : source/exo3_2.c.s
 
 # Help Target
 help:
@@ -276,12 +276,12 @@ help:
 	@echo "... source/DFA_Generalisation.o"
 	@echo "... source/DFA_Generalisation.i"
 	@echo "... source/DFA_Generalisation.s"
-	@echo "... source/exo3-1.o"
-	@echo "... source/exo3-1.i"
-	@echo "... source/exo3-1.s"
-	@echo "... source/exo3-2.o"
-	@echo "... source/exo3-2.i"
-	@echo "... source/exo3-2.s"
+	@echo "... source/exo3_1.o"
+	@echo "... source/exo3_1.i"
+	@echo "... source/exo3_1.s"
+	@echo "... source/exo3_2.o"
+	@echo "... source/exo3_2.i"
+	@echo "... source/exo3_2.s"
 .PHONY : help
 
 

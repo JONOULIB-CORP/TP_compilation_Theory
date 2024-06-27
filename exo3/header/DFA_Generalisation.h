@@ -4,30 +4,29 @@
 
 #ifndef COMPILATION_TP_1_5_DFA_GENERALISATION_H
 #define COMPILATION_TP_1_5_DFA_GENERALISATION_H
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
 
-class GeneralizedDFA {
-    public:
-        GeneralizedDFA(const std::string& word);
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-        void reset();
+typedef struct {
+    char character;
+    int nextState;
+} Transition;
 
-        void process(char character) ;
+typedef struct {
+    char* word;
+    int currentState;
+    Transition* transitions;
+    int transitionCount;
+} GeneralizedDFA;
 
-        bool isFinalState() const;
+GeneralizedDFA* createGeneralizedDFA(const char* word);
 
-    private:
-        std::string word;
-        int currentState;
-        std::vector<std::pair<char, int>> transitions;
+void reset(GeneralizedDFA* dfa);
 
-};
+void process(GeneralizedDFA* dfa, char character);
 
-
-
-// DFA_Generalisation
-
-#endif //COMPILATION_TP_1_5_DFA_GENERALISATION_H
+int isFinalState(const GeneralizedDFA* dfa);
+void freeGeneralizedDFA(GeneralizedDFA* dfa);
+#endif // COMPILATION_TP_1_5_DFA_GENERALISATION_H

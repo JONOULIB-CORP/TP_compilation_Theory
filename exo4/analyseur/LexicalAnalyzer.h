@@ -1,27 +1,25 @@
 #ifndef LEXICALANALYZER_H
 #define LEXICALANALYZER_H
 
-#include <iostream>
-#include <fstream>
-#include <string>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <stddef.h>
 
-class LexicalAnalyzer {
-public:
-    void tokenizeArithmeticExpression(const std::string& expression);
-    void parseFile(const std::string& filename);
+#define MAX_TOKEN_SIZE 247
+#define OUTPUT_SIZE 247
 
-private:
-    enum State {
-        START,
-        INTEGER,
-        OPERATOR,
-        ERROR,
-        END
-    };
+typedef enum {
+    START,
+    INTEGER,
+    OPERATOR,
+    ERROR,
+    END
+} State;
 
-    State state;
-
-    void outputToken(const std::string& token);
-};
+void tokenizeArithmeticExpression(const char* expression);
+void parseFile(const char* filename);
+void outputToken(const char* token);
 
 #endif // LEXICALANALYZER_H
