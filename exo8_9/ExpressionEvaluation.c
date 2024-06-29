@@ -23,6 +23,45 @@ void exp_post_fixe_sans_prio(const char* expr, char* result) {
     *result = '\0';
 }
 
+int eval_expr_sans_prio(char *expression) {
+    int result = 0;
+    int current_number = 0;
+    char current_operator = '+';
+
+    for (int i = 0; expression[i] != '\0'; i++) {
+        if (isdigit(expression[i])) {
+            current_number = current_number * 10 + (expression[i] - '0');
+        } else if (expression[i] == '+' || expression[i] == '*') {
+            switch (current_operator) {
+                case '+':
+                    result += current_number;
+                    break;
+                case '*':
+                    result *= current_number;
+                    break;
+                default:
+                    break;
+            }
+            current_operator = expression[i];
+            current_number = 0;
+        }
+    }
+
+    // Effectuer la dernière opération
+    switch (current_operator) {
+        case '+':
+            result += current_number;
+            break;
+        case '*':
+            result *= current_number;
+            break;
+        default:
+            break;
+    }
+
+    return result;
+}
+
 int precedence(char op) {
     switch (op) {
         case '+':

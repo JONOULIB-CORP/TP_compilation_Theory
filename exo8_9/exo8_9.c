@@ -29,7 +29,9 @@ int main(int argc, char *argv[]) {
     fclose(file);
 
     printf("Expression lue : %s\n", expression);
-
+    printf("Expression Analyse :");
+    parseFile(argv[1]);
+    
     char result_avec_prio[MAX_EXPRESSION_SIZE];
     char result_sans_prio[MAX_EXPRESSION_SIZE];
 
@@ -44,7 +46,7 @@ int main(int argc, char *argv[]) {
     exp_post_fixe_sans_prio(expression, result_sans_prio);
     printf("Expression postfixe sans priorité : %s\n", result_sans_prio);
 
-    int eval_sans_prio = evaluate_postfix(result_sans_prio);
+    int eval_sans_prio = eval_expr_sans_prio(result_sans_prio);
     printf("Résultat de l'évaluation sans priorité : %d\n", eval_sans_prio);
 
     return 0;
