@@ -4,4 +4,4 @@ Pile					Entrée					sortie
 $					dcadcd$					decaler / empiler
 $d					cadcd$					re9duire (a --> d)
 $A					cadcd$					de9caler / empiler c
-$Ac					acdcd$					Erreur}
+$Ac					acdcd$					Erreur
