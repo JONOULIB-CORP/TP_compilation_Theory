@@ -1,0 +1,225 @@
+State 17 conflicts: 2 shift/reduce
+State 18 conflicts: 2 shift/reduce
+
+
+Grammar
+
+    0 $accept: program $end
+
+    1 program: program statement
+    2        | %empty
+
+    3 statement: assignment
+    4          | print_stmt
+
+    5 assignment: VAR '=' expr ';'
+
+    6 print_stmt: PRINT VAR ';'
+
+    7 expr: expr '+' expr
+    8     | expr '*' expr
+    9     | INT
+   10     | VAR
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    '*' (42) 8
+    '+' (43) 7
+    ';' (59) 5 6
+    '=' (61) 5
+    error (256)
+    INT <intval> (258) 9
+    VAR <var> (259) 5 6 10
+    PRINT (260) 6
+
+
+Nonterminals, with rules where they appear
+
+    $accept (10)
+        on left: 0
+    program (11)
+        on left: 1 2
+        on right: 0 1
+    statement (12)
+        on left: 3 4
+        on right: 1
+    assignment (13)
+        on left: 5
+        on right: 3
+    print_stmt (14)
+        on left: 6
+        on right: 4
+    expr <intval> (15)
+        on left: 7 8 9 10
+        on right: 5 7 8
+
+
+State 0
+
+    0 $accept: . program $end
+
+    $default  reduce using rule 2 (program)
+
+    program  go to state 1
+
+
+State 1
+
+    0 $accept: program . $end
+    1 program: program . statement
+
+    $end   shift, and go to state 2
+    VAR    shift, and go to state 3
+    PRINT  shift, and go to state 4
+
+    statement   go to state 5
+    assignment  go to state 6
+    print_stmt  go to state 7
+
+
+State 2
+
+    0 $accept: program $end .
+
+    $default  accept
+
+
+State 3
+
+    5 assignment: VAR . '=' expr ';'
+
+    '='  shift, and go to state 8
+
+
+State 4
+
+    6 print_stmt: PRINT . VAR ';'
+
+    VAR  shift, and go to state 9
+
+
+State 5
+
+    1 program: program statement .
+
+    $default  reduce using rule 1 (program)
+
+
+State 6
+
+    3 statement: assignment .
+
+    $default  reduce using rule 3 (statement)
+
+
+State 7
+
+    4 statement: print_stmt .
+
+    $default  reduce using rule 4 (statement)
+
+
+State 8
+
+    5 assignment: VAR '=' . expr ';'
+
+    INT  shift, and go to state 10
+    VAR  shift, and go to state 11
+
+    expr  go to state 12
+
+
+State 9
+
+    6 print_stmt: PRINT VAR . ';'
+
+    ';'  shift, and go to state 13
+
+
+State 10
+
+    9 expr: INT .
+
+    $default  reduce using rule 9 (expr)
+
+
+State 11
+
+   10 expr: VAR .
+
+    $default  reduce using rule 10 (expr)
+
+
+State 12
+
+    5 assignment: VAR '=' expr . ';'
+    7 expr: expr . '+' expr
+    8     | expr . '*' expr
+
+    ';'  shift, and go to state 14
+    '+'  shift, and go to state 15
+    '*'  shift, and go to state 16
+
+
+State 13
+
+    6 print_stmt: PRINT VAR ';' .
+
+    $default  reduce using rule 6 (print_stmt)
+
+
+State 14
+
+    5 assignment: VAR '=' expr ';' .
+
+    $default  reduce using rule 5 (assignment)
+
+
+State 15
+
+    7 expr: expr '+' . expr
+
+    INT  shift, and go to state 10
+    VAR  shift, and go to state 11
+
+    expr  go to state 17
+
+
+State 16
+
+    8 expr: expr '*' . expr
+
+    INT  shift, and go to state 10
+    VAR  shift, and go to state 11
+
+    expr  go to state 18
+
+
+State 17
+
+    7 expr: expr . '+' expr
+    7     | expr '+' expr .
+    8     | expr . '*' expr
+
+    '+'  shift, and go to state 15
+    '*'  shift, and go to state 16
+
+    '+'       [reduce using rule 7 (expr)]
+    '*'       [reduce using rule 7 (expr)]
+    $default  reduce using rule 7 (expr)
+
+
+State 18
+
+    7 expr: expr . '+' expr
+    8     | expr . '*' expr
+    8     | expr '*' expr .
+
+    '+'  shift, and go to state 15
+    '*'  shift, and go to state 16
+
+    '+'       [reduce using rule 8 (expr)]
+    '*'       [reduce using rule 8 (expr)]
+    $default  reduce using rule 8 (expr)
