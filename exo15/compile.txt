@@ -1,0 +1,4 @@
+1 flex analyser.lex
+2 bison --defines=analyser.h -v -o analyser.tab.c parser.y
+3 gcc lex.yy.c analyser.tab.c -o exo15 -lfl 
+4 cat source.txt | ./exo15
