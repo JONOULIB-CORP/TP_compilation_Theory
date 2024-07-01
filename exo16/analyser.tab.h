@@ -34,8 +34,8 @@
 /* Undocumented macros, especially those whose name start with YY_,
    are private implementation details.  Do not rely on them.  */
 
-#ifndef YY_YY_PARSER_TAB_H_INCLUDED
-# define YY_YY_PARSER_TAB_H_INCLUDED
+#ifndef YY_YY_ANALYSER_TAB_H_INCLUDED
+# define YY_YY_ANALYSER_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -59,9 +59,9 @@ union YYSTYPE
 {
 #line 11 "parser.y"
 
-    int intval;  // Ajouter cette ligne pour define ofn type de valeur entier
+    int intval;  // Ajouter cette ligne pour définir un type de valeur entier
 
-#line 65 "parser.tab.h"
+#line 65 "analyser.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
@@ -74,4 +74,4 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-#endif /* !YY_YY_PARSER_TAB_H_INCLUDED  */
+#endif /* !YY_YY_ANALYSER_TAB_H_INCLUDED  */

@@ -443,7 +443,7 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "analyser.lex"
 #line 2 "analyser.lex"
-#include "parser.tab.h"
+#include "analyser.tab.h"
 #line 448 "lex.yy.c"
 #line 449 "lex.yy.c"
 

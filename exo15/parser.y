@@ -5,11 +5,11 @@
 void yyerror(const char *s);
 int yylex(void);
 
-int result;  // Variable pour stocker le resule ofde l'expression
+int result;  // Variable pour stocker le résultat de l'expression
 %}
 
 %union {
-    int intval;  // Ajouter cette ligne pour define ofn type de valeur entier
+    int intval;  // Ajouter cette ligne pour définir un type de valeur entier
 }
 
 %token <intval> INT
@@ -18,33 +18,33 @@ int result;  // Variable pour stocker le resule ofde l'expression
 
 %%
 
-S : E { printf("Reduce of S -> E    Fin de l'analyse !!!\n"); }
+S : E { printf("Reduce S -> E    Fin!!!\n"); }
   ;
 
 E : E '+' T { 
-        printf("Reduce of E -> E + T    $1=%d    $2='%c'    $3=%d    $$=%d\n", $1, '+', $3, $1 + $3); 
+        printf("Reduce E -> E + T    $1=%d    $2='%c'    $3=%d    $$=%d\n", $1, '+', $3, $1 + $3); 
         $$ = $1 + $3; 
-        result = $$; 
+         
     }
   | T { 
-        printf("Reduce of E -> T    $1=%d    $$=%d\n", $1, $1); 
+        printf("Reduce E -> T    $1=%d    $$=%d\n", $1, $1); 
         $$ = $1; 
-        result = $$; 
+         
     }
   ;
 
 T : T '*' F { 
-        printf("Reduce of T -> T * F    $1=%d    $2='%c'    $3=%d    $$=%d\n", $1, '*', $3, $1 * $3); 
+        printf("Reduce T -> T * F    $1=%d    $2='%c'    $3=%d    $$=%d\n", $1, '*', $3, $1 * $3); 
         $$ = $1 * $3; 
     }
   | F { 
-        printf("Reduce of T -> F    $1=%d    $$=%d\n", $1, $1); 
+        printf("Reduce T -> F    $1=%d    $$=%d\n", $1, $1); 
         $$ = $1; 
     }
   ;
 
 F : INT { 
-        printf("Reduce of F -> int    $1=%d    $$=%d\n", $1, $1); 
+        printf("Reduce F -> int    $1=%d    $$=%d\n", $1, $1); 
         $$ = $1; 
     }
   ;
@@ -57,7 +57,7 @@ void yyerror(const char *s) {
 
 int main(void) {
     if (yyparse() == 0) {
-        printf("okay see you thank you Tp3: -> 30/30   \n");
+        printf("okay see you thank you Tp3: -> 30/30  \n");
     }
     return 0;
 }

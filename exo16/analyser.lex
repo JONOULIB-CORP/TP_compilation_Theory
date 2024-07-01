@@ -1,13 +1,17 @@
 %{
-#include "parser.tab.h"
+#include "analyser.h"
 %}
 
-%% 
-[0-9]+  { yylval = atoi(yytext); return NUMBER; }
-[ \t]   ;  // ignore whitespace
-\+      { return PLUS; }
-\*      { return TIMES; }
-\n      { return 0; }
-.       { return yytext[0]; }  // return any other character as itself
+%%
+
+[0-9]+      { yylval.intval = atoi(yytext); return INT; }
+[ \t\n]+    { /* ignorer les espaces blancs */ }
+"+"         { return '+'; }
+"*"         { return '*'; }
+.           { return yytext[0]; }
 
 %%
+
+int yywrap(void) {
+    return 1;
+}

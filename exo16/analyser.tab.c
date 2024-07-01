@@ -74,9 +74,9 @@
 void yyerror(const char *s);
 int yylex(void);
 
-int result;  // Variable pour stocker le resule ofde l'expression
+int result;  // Variable pour stocker le résultat de l'expression
 
-#line 80 "parser.tab.c"
+#line 80 "analyser.tab.c"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -109,8 +109,8 @@ int result;  // Variable pour stocker le resule ofde l'expression
 
 /* Use api.header.include to #include this header
    instead of duplicating it here.  */
-#ifndef YY_YY_PARSER_TAB_H_INCLUDED
-# define YY_YY_PARSER_TAB_H_INCLUDED
+#ifndef YY_YY_ANALYSER_H_INCLUDED
+# define YY_YY_ANALYSER_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -134,9 +134,9 @@ union YYSTYPE
 {
 #line 11 "parser.y"
 
-    int intval;  // Ajouter cette ligne pour define ofn type de valeur entier
+    int intval;  // Type union pour les valeurs entières
 
-#line 140 "parser.tab.c"
+#line 140 "analyser.tab.c"
 
 };
 typedef union YYSTYPE YYSTYPE;
@@ -149,7 +149,7 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-#endif /* !YY_YY_PARSER_TAB_H_INCLUDED  */
+#endif /* !YY_YY_ANALYSER_H_INCLUDED  */
 
 
 
@@ -511,7 +511,7 @@ static const yytype_int8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_int8 yyrline[] =
 {
-       0,    21,    21,    24,    29,    36,    40,    46
+       0,    21,    21,    27,    31,    37,    41,    47
 };
 #endif
 
@@ -1300,59 +1300,60 @@ yyreduce:
     {
   case 2:
 #line 21 "parser.y"
-      { printf("Reduce of S -> E    Fin de l'analyse !!!\n"); }
-#line 1305 "parser.tab.c"
+      { 
+        printf("Réduction de S -> E    Fin de l'analyse !!!\n");
+        result = (yyvsp[0].intval);  // Stocker le résultat final
+    }
+#line 1308 "analyser.tab.c"
     break;
 
   case 3:
-#line 24 "parser.y"
+#line 27 "parser.y"
             { 
-        printf("Reduce of E -> E + T    $1=%d    $2='%c'    $3=%d    $$=%d\n", (yyvsp[-2].intval), '+', (yyvsp[0].intval), (yyvsp[-2].intval) + (yyvsp[0].intval)); 
+        printf("Réduction de E -> E + T    $1=%d    $2='%c'    $3=%d    $$=%d\n", (yyvsp[-2].intval), '+', (yyvsp[0].intval), (yyvsp[-2].intval) + (yyvsp[0].intval)); 
         (yyval.intval) = (yyvsp[-2].intval) + (yyvsp[0].intval); 
-        result = (yyval.intval); 
     }
-#line 1315 "parser.tab.c"
+#line 1317 "analyser.tab.c"
     break;
 
   case 4:
-#line 29 "parser.y"
+#line 31 "parser.y"
       { 
-        printf("Reduce of E -> T    $1=%d    $$=%d\n", (yyvsp[0].intval), (yyvsp[0].intval)); 
+        printf("Réduction de E -> T    $1=%d    $$=%d\n", (yyvsp[0].intval), (yyvsp[0].intval)); 
         (yyval.intval) = (yyvsp[0].intval); 
-        result = (yyval.intval); 
     }
-#line 1325 "parser.tab.c"
+#line 1326 "analyser.tab.c"
     break;
 
   case 5:
-#line 36 "parser.y"
+#line 37 "parser.y"
             { 
-        printf("Reduce of T -> T * F    $1=%d    $2='%c'    $3=%d    $$=%d\n", (yyvsp[-2].intval), '*', (yyvsp[0].intval), (yyvsp[-2].intval) * (yyvsp[0].intval)); 
+        printf("Réduction de T -> T * F    $1=%d    $2='%c'    $3=%d    $$=%d\n", (yyvsp[-2].intval), '*', (yyvsp[0].intval), (yyvsp[-2].intval) * (yyvsp[0].intval)); 
         (yyval.intval) = (yyvsp[-2].intval) * (yyvsp[0].intval); 
     }
-#line 1334 "parser.tab.c"
+#line 1335 "analyser.tab.c"
     break;
 
   case 6:
-#line 40 "parser.y"
+#line 41 "parser.y"
       { 
-        printf("Reduce of T -> F    $1=%d    $$=%d\n", (yyvsp[0].intval), (yyvsp[0].intval)); 
+        printf("Réduction de T -> F    $1=%d    $$=%d\n", (yyvsp[0].intval), (yyvsp[0].intval)); 
         (yyval.intval) = (yyvsp[0].intval); 
     }
-#line 1343 "parser.tab.c"
+#line 1344 "analyser.tab.c"
     break;
 
   case 7:
-#line 46 "parser.y"
+#line 47 "parser.y"
         { 
-        printf("Reduce of F -> int    $1=%d    $$=%d\n", (yyvsp[0].intval), (yyvsp[0].intval)); 
+        printf("Réduction de F -> int    $1=%d    $$=%d\n", (yyvsp[0].intval), (yyvsp[0].intval)); 
         (yyval.intval) = (yyvsp[0].intval); 
     }
-#line 1352 "parser.tab.c"
+#line 1353 "analyser.tab.c"
     break;
 
 
-#line 1356 "parser.tab.c"
+#line 1357 "analyser.tab.c"
 
       default: break;
     }
@@ -1584,16 +1585,17 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 52 "parser.y"
+#line 53 "parser.y"
 
 
 void yyerror(const char *s) {
-    fprintf(stderr, "Error: %s\n", s);
+    fprintf(stderr, "Erreur: %s\n", s);
 }
 
 int main(void) {
     if (yyparse() == 0) {
-        printf("okay see you thank you Tp3: -> 30/30   \n");
+        printf("Résultat de l'expression : %d\n", result);
+        printf("okay see you thank you Tp3: -> 30/30  \n");
     }
     return 0;
 }
